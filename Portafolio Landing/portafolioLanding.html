@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilo/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap 5-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--Bootstrap 5-->
+    <script type="text/javascript" src="./Js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script> <!--Prism.js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+    <!--Prism.js, para establecer el color de las etiquetas html en la animación del header-->
+    <title>Portafolio Sergio</title>
+</head>
+
+<body>
+    <div id="animation-container">
+        <div id="ball-animation"></div>
+        <!-- <div id="suelo"></div>
+        <div id="vertical"></div> -->
+    </div>
+
+    <div class="container-fluid" id="hero-content">
+        <header id="header-element" class="container-fluid content-div">
+            <div id="hero-menu">
+                <div id="menu-button" onclick="showMenu()"><i id="menu-bars"></i></div>
+                <div id="menu-content">
+                    <ul id="menu-list">
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#courses">Cursos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="header-div1">
+                <h1 id="name" onmouseenter="mixChars('name', 'Sergio')" >Sergio</h1>
+                <h1 id="surname" onmouseenter="mixChars('surname', 'Navarro')">Navarro</h1>
+                <h2 class="text-center" id="job-position" onmouseenter="mixChars('job-position', 'Desarrollador Web')">Desarrollador Web</h2>
+            </div>
+            <div class="container" id="header-div2">
+                <h2>Portafolio</h2>
+                <div id="code-animation-container">
+                    <pre><code id="code-animation" class="languaje-html"></code></pre>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="projects-content" class="container-fluid content-div">
+                <a name="projects"></a>
+                <h2>Mis proyectos</h2>
+                <div id="projects" class="container-fluid">
+                    <div id="project-gesgas" class="container" title="Ir a detalle"
+                        onclick="toDetail('project-gesgas')">
+                        <h3>GESGAS</h3>
+                        <img src="./Imagenes/captura-gesgas.jpg" class="rounded img-fluid" alt="Captura">
+                        <p>Gestor de gastos personales</p>
+                    </div>
+
+                    <div id="project-marketart" class="container" title="Ir a detalle"
+                        onclick="toDetail('project-marketart')">
+                        <h3>MarketArt</h3>
+                        <img src="./Imagenes/captura-marketart.jpg" class="rounded img-fluid" alt="Captura">
+                        <p>Marketplace de productos artesanales</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="courses-content" class="container-fluid content-div">
+                <a name="courses"></a>
+                <h2>Cursos realizados</h2>
+                <a>Curso</a><a>Curso</a><a>Curso</a><a>Curso</a>
+            </div>
+
+
+            <div id="tech-content" class="container-fluid content-div">
+                <h2>Tecnologías aprendidas de forma teórica y/o utilizadas en proyectos:</h2>
+                <div id="container-tech">
+                    <div id="client-tech">
+                        <p>Lado cliente</p>
+                        <i><img src="./Imagenes/Tech Icons/HTML5.png" class="techIcon" title="HTML5"></i>
+                        <i><img src="./Imagenes/Tech Icons/CSS3.png" class="techIcon" id="css" title="CSS3"></i>
+                        <i><img src="./Imagenes/Tech Icons/Sass.png" class="techIcon" title="Sass"></i>
+                        <i><img src="./Imagenes/Tech Icons/Bootstrap 5.png" class="techIcon" id="bootstrap" title="Bootstrap 5"></i>
+                        <i><img src="./Imagenes/Tech Icons/JavaScript.png" class="techIcon" title="Javascript"></i>
+                        <i><img src="./Imagenes/Tech Icons/Angular.png" class="techIcon" title="Angular"></i>
+                        <i><img src="./Imagenes/Tech Icons/Java.png" class="techIcon" id="java" title="Java"></i>
+                    </div>
+                    <div id="server-tech">
+                        <p>Lado servidor</p>
+                        <i><img src="./Imagenes/Tech Icons/PHP.png" class="techIcon" id="php" title="PHP"></i>
+                        <i><img src="./Imagenes/Tech Icons/Node.js.png" class="techIcon" id="nodejs" title="Node.js"></i>
+                    </div>
+                    <div id="databse-tech">
+                        <p>Bases de datos</p>
+                        <i><img src="./Imagenes/Tech Icons/MySQL.png" class="techIcon" id="mysql" title="MySQL"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact-content" class="container-fluid content-div">
+                <a name="contact"></a>
+                <h2>Información de contacto</h2>
+                <p>Correo</p>
+                <p>Teléfono</p>
+                <p>Enlace a mi currículum</p>
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>

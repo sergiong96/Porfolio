@@ -1,0 +1,11 @@
+Gastos con grafico de barras organizados por semana, mes o año.
+
+Pestañas izquierda:
+Página principal.
+Añadir gasto. Formulario gasto puntual o repetitivo. Fecha. Cantidad.
+Categorías. Grafico circular (ordenado por mes).
+Creador de informes. El usuario selecciona un mes, año o semana y
+te genera una plantilla de informe con los gastos y categorías correspondientes
+
+Mejorar:
+Crear funcion añoAjaxAn para crear la grafica anual así, en lugar del script que tengo en html

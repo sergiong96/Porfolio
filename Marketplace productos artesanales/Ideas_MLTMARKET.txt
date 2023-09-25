@@ -1,0 +1,4 @@
+Catalogo de productos. Los usuarios pueden: añadir sus productos y 
+venderlos, ver otros productos, comprarlos, añadirlos a favoritos.
+
+componente con la lista de productos que aparecen al abrir la pagina.

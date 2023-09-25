@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> <!--Bootstrap 5-->
+    <script type="text/javascript" src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css"> <!--Prism.js, para establecer el color de las etiquetas html en la animación del header-->
+    <title>Portafolio Sergio</title>
+</head>
+
+<body>
+    <div id="animation-container">
+        <div id="ball-animation"></div>
+    </div>
+
+    <div id="hero-content">
+        <header id="header-element" class="content-div">
+            <div id="hero-menu">
+                <div id="menu-button" onclick="showMenu()"><i id="menu-bars"></i></div>
+                <div id="menu-content">
+                    <ul id="menu-list">
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#courses">Cursos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header-div1">
+                <h1 id="name">Sergio </h1>
+                <h1 id="surname">Navarro</h1>
+                <h2>Desarrollador Web</h2>
+            </div>
+            <div id="header-div2">
+                <h2>Portafolio</h2>
+                <div id="code-animation-container">
+                    <pre><code id="code-animation" class="languaje-html"></code></pre>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="projects-content" class="content-div">
+                <a name="projects"></a>
+                <h2>Mis proyectos</h2>
+                <div id="projects">
+                    <div id="project-gesgas" title="Ir a detalle" onclick="toDetail('project-gesgas')">
+                        <h3>GESGAS</h3>
+                        <img src="./imagenes-landing/captura-gesgas.jpg" alt="Captura">
+                        <p>Gestor de gastos personales</p>
+                    </div>
+
+                    <div id="project-marketart" title="Ir a detalle" onclick="toDetail('project-marketart')">
+                        <h3>MarketArt</h3>
+                        <img src="./imagenes-landing/captura-marketart.jpg" alt="Captura">
+                        <p>Marketplace de productos artesanales</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="courses-content" class="content-div">
+                <a name="courses"></a>
+                <h2>Cursos realizados</h2>
+                <a>Curso</a><a>Curso</a><a>Curso</a><a>Curso</a>
+            </div>
+
+
+            <div id="tech-content" class="content-div">
+                <h2>Tecnologías usadas</h2>
+                <a>Icono</a><a>Icono</a><a>Icono</a><a>Icono</a>
+            </div>
+
+
+            <div id="contact-content" class="content-div">
+                <a name="contact"></a>
+                <h2>Información de contacto</h2>
+            </div>
+
+
+
+
+
+
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>

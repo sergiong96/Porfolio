@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Google Fonts: Roboto*/
+/*BASE CONTENIDO*/
+.cont {
+    display: none;
+}
+
+.cont.selected {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-align: center;
+    background-color: #A8DBFF;
+    width: 89%;
+    height: 97vh;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+
+/*BARRA NAVEGACIÓN*/
+aside {
+    width: 11%;
+}
+
+nav#navigation_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav#navigation_bar {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 97vh;
+    width: 100%;
+    float: left;
+    background-color: #637CFB;
+    margin-bottom: 1rem;
+}
+
+nav#navigation_bar ul:first-child {
+    padding-top: 1em;
+
+}
+
+nav#navigation_bar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    cursor: pointer;
+}
+
+nav#navigation_bar li:hover {
+    color: white;
+    border: 1px solid black;
+    background-color: #3A4994;
+    box-shadow: 3px 6px #888888;
+}
+
+.tab.selected {
+    background-color: #3A4994;
+    color: white;
+}
+
+/*SELECTOR TRAMO TEMPORAL Main y Cat*/
+#select_tiempo {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.8em;
+    float: left;
+    text-align: center;
+    border-color: palevioletred;
+    width: 7em;
+    color: palevioletred;
+    padding: 0.5em;
+    margin: 0.5em;
+    transition: width 1s ease-in-out;
+}
+
+#select_tiempo:hover {
+    border-radius: 0.8em;
+    text-align: center;
+    border-color: palevioletred;
+    width: 9em;
+    transition: width 1s ease-in-out;
+    color: palevioletred;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#select_tiempoCat {
+    border-radius: 0.8em;
+    float: left;
+    text-align: center;
+    border-color: palevioletred;
+    width: 7em;
+    color: palevioletred;
+    padding: 0.5em;
+    margin: 0.5em;
+    transition: width 1s ease-in-out;
+}
+
+#select_tiempoCat:hover {
+    border-radius: 0.8em;
+    text-align: center;
+    border-color: palevioletred;
+    width: 9em;
+    transition: width 1s ease-in-out;
+    color: palevioletred;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+/*SPAN FECHA Main y Cat*/
+div#tiempo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#tiempo span {
+    padding: 2em;
+}
+
+div#tiempoCat {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#tiempoCat span {
+    padding: 2em;
+}
+
+/*GRÁFICA PRINCIPAL*/
+#MainGraph {
+    font-family: 'Roboto', sans-serif;
+    width: 95% !important;
+    height: 80% !important;
+}
+
+/*FORMULARIO AÑADIR GASTO*/
+#add_cont {
+    text-align: center;
+}
+
+#divForm {
+    float: left;
+    border: 1px solid black;
+    border-radius: 1em;
+    width: 30%;
+    height: 40%;
+    padding: 2em 0 2em 0;
+    margin: 0 2em 0 5em;
+}
+
+#add_form {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#divForm input {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1em;
+}
+
+#divForm select {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3em;
+}
+
+#divForm input[type="submit"] {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+
+/*TABLA GASTOS*/
+#div_tabla_gastos {
+    float: right;
+    border: 1px solid black;
+    border-radius: 1em;
+    width: 35%;
+    height: 60%;
+    padding: 2em 2em 2em 2em;
+    margin: 0 5em 0 2em;
+
+}
+
+#tablaGastos {
+    display: inline-block;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    border-right: none;
+}
+
+
+div#div_tabla_gastos #tablaGastos th,
+div#div_tabla_gastos #tablaGastos td,
+div#div_tabla_gastos #tablaGastos tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.3em;
+}
+
+
+#tablaGastos i {
+    cursor: pointer;
+}
+
+
+/*PESTAÑA GRAFICA CATEGORIAS*/
+div#divGraphCat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categoryGraph {
+    height: 55% !important;
+    width: 35% !important;
+}
+
+
+/*PESTAÑA INFORME*/
+
+div#inf_cont #mesInf,
+div#inf_cont #mesInfLabel {
+    display: none;
+}
+
+#form_informe {
+    float: left;
+    width: 40%;
+    height: 65%;
+    border: 1px solid;
+    margin: 0.5em 0 0 0.5em;
+}
+
+div#inf_cont #formularioInforme {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#inf_cont #formularioInforme>select {
+    margin-bottom: 3em;
+}
+
+div#inf_cont #formularioInforme select {
+    font-family: 'Roboto', sans-serif;
+    width: 15%
+}
+
+div#informeGastos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2em 0 1em;
+}
+
+#inf_cont input[type="button"] {
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+div#plantilla {
+    float: right;
+}
+
+/*PLANTILLA INFORME*/
+/*Plantilla anual*/
+div#informeGastos #tablaUser {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div#informeGastos #tablaUser th {
+    background-color: #109C19;
+}
+
+div#informeGastos #tablaUser th,
+div#informeGastos #tablaUser td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.3em 0.3em;
+}
+
+div#informeGastos #tablaInformeAn {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div#informeGastos #tablaInformeAn tbody tr:last-child {
+    text-align: right;
+}
+
+div#informeGastos #tablaInformeAn .color {
+    background-color: #C8E8CA;
+}
+
+div#informeGastos #tablaInformeAn th {
+    background-color: #109C19;
+}
+
+div#informeGastos #tablaInformeAn th,
+div#informeGastos #tablaInformeAn td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em 0.5em;
+}
+
+#headTablaGastos tr:nth-child(1) td:nth-child(2) {
+    padding-right: 10px;
+}
+
+#headTablaGastos tr:nth-child(1) td:nth-child(4) {
+    padding-right: 10px;
+}
+
+/*Plantilla mensual*/
+div#informeGastos #tablaInformeMes {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div#informeGastos #tablaInformeMes tbody tr:last-child {
+    text-align: right;
+}
+
+div#informeGastos #tablaInformeMes .color {
+    background-color: #C8E8CA;
+}
+
+div#informeGastos #tablaInformeMes th {
+    background-color: #109C19;
+}
+
+div#informeGastos #tablaInformeMes th,
+div#informeGastos #tablaInformeMes td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em 0.5em;
+}
+
+
+/*FOOTER*/
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.668);
+}
+
+#footer-logo img {
+    float: left;
+    height: 115px;
+    width: 134px;
+    margin-left: 1rem;
+}
+
+#footer-links {
+    margin-left: 5rem;
+    display: inline-flex;
+    transform: translate(7%, 0%);
+}
+
+#footer-links li {
+    margin-bottom: 1.5rem;
+}
+
+#footer-links .footer-column {
+    margin: 0 3rem;
+}
+
+#footer-links .footer-column p {
+    text-align: center;
+}
+
+#footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-social i {
+    font-size: 2rem;
+    margin: 0 2rem;
+    color: white;
+}
+
+#footer-disclaimer {
+    padding: 0 0 0 7px;
+}
