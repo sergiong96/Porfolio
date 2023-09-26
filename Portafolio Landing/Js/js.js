@@ -47,6 +47,12 @@ function showContent() {
     divToShow.classList.add("active");
 }
 
+/*Scroll menú header*/
+function toSection(idSection) {
+    const elementToScroll = document.getElementById(idSection);
+    elementToScroll.scrollIntoView({ behavior: 'smooth' });
+    setupScrolling();
+}
 
 /*Scroll entre secciones*/
 function setupScrolling() {
@@ -104,11 +110,11 @@ function toDetail(idProject) {
 
     switch (idProject) {
         case 'project-gesgas':
-            window.location.href = 'Proyectos/detalleProyectoGesgas.html';
+            window.open('Proyectos/detalleProyectoGesgas.html', '_blank');
             break;
 
         case 'project-marketart':
-            window.location.href = 'Proyectos/detalleProyectoMarketArt.html';
+            window.open('Proyectos/detalleProyectoMarketArt.html', '_blank');
             break;
     }
 }

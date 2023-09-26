@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estiloDetalle.css">
     <script type="text/javascript" src="./jsDetalle.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!--Google Fonts-->
     <title>Detalle Gesgas</title>
 </head>
 
@@ -13,6 +15,23 @@
     <main>
 
         <div id="hero-detail">
+            <aside>
+                <div id="back-button" title="Volver al porfolio">
+                    <button type="button" onclick="toPorfolio()"><span
+                            class="material-symbols-outlined">arrow_back</span></button>
+                </div>
+                <div id="technologies">
+                    <p>Tecnologías utilizadas:</p>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javacript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </aside>
+
             <div id="img-and-button">
                 <div id="img-detail"><img src="../Imagenes/captura-gesgas.jpg"></div>
                 <div id="to-project-detail">
@@ -21,17 +40,25 @@
             </div>
 
             <aside>
-                <div id="functionalities"></div>
-                <div id="technologies">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div id="functionalities">
+                    <p id="paragraph-functionalities" onclick="showFunctionalities()" title="Desplegar funcionalidades">
+                        Funcionalidades principales<span id="dropdown-icon" class="material-symbols-outlined">
+                            chevron_right</span></p>
+                    <div id="dropdown-functionalities" class="">
+                        <ol>
+                            <li>Gráficas de barras que muestran los gastos del usuario a lo largo del tiempo.</li>
+                            <li>El usuario puede insertar nuevos gastos determinando distinta información.
+                                También tiene la capacidad de visualizar esos gastos en una tabla y eliminarlos.</li>
+                            <li>Gráficas circulares en las que el usuario puede visualizar las categorías con sus gastos
+                                asociados, seleccionando un año o un mes determinado.</li>
+                            <li>El usuario puede generar un informe y descargarlo en pdf.</li>
+                        </ol>
+                    </div>
                 </div>
             </aside>
+
+
+
 
         </div>
 

@@ -16,23 +16,6 @@ body {
     scrollbar-gutter: unset;
 }
 
-/*#suelo{ /*TEMPORAL, para facilitar la animación*/
-/*position: absolute;
-    top:50%;
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    
-/*}*/
-
-/*#vertical{ /*TEMPORAL, para facilitar la animación*/
-/*position: absolute;
-    left:50%;
-    height: 100%;
-    width: 2px;
-    background-color: black;
-/*}*/
-
 #ball-animation {
     position: absolute;
     top: 0;
@@ -281,7 +264,7 @@ header #header-div2 {
     height: 3rem;
 }
 
-#header-div1 #job-position{
+#header-div1 #job-position {
     height: 3rem;
 }
 
@@ -442,4 +425,23 @@ div.content-div {
 #tech-content i .techIcon#nodejs,
 #tech-content i .techIcon#mysql {
     width: 6rem !important;
+}
+
+#contact-content #contact-elements {
+    margin-top: 5rem;
+}
+
+#contact-content #li-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+#contact-content p {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#contact-content p span {
+    margin-right: 0.3rem;
 }

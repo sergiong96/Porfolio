@@ -1,9 +1,135 @@
-#hero-detail{
+@import url('https://fonts.googleapis.com/css2?family==Montserrat&display=swap');
+
+#hero-detail {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#back-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+#back-button button {
+    cursor: pointer;
+    width: 2.5rem;
+    border-radius: 2rem;
+}
+
+#back-button button:hover {
+    animation: bow 1s ease-out;
+}
+
+#back-button button:hover span {
+    animation: goBack 0.8s ease-in 0.5s;
+}
+
+#back-button button span {
+    vertical-align: middle;
+    position: relative;
+    left: 0;
 }
 
 
-#img-and-button img{
+@keyframes bow {
+    0% {
+        width: 2.5rem;
+        text-align: end;
+    }
+
+    50% {
+        text-align: end;
+        width: 4rem;
+    }
+
+    100% {
+        text-align: end;
+        width: 2.5rem;
+    }
+}
+
+@keyframes goBack {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+
+#img-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 1rem 0 2rem;
+}
+
+#img-and-button img {
     width: 30rem;
     height: 16rem;
+    border: 1px solid burlywood;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+#img-and-button button {
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    transition: width 500ms ease-in-out;
+}
+
+#img-and-button button:hover {
+    width: 30rem;
+    background-color: lightcoral;
+    color: white;
+    transition: width 500ms ease-in-out;
+}
+
+#technologies {
+    height: 15rem;
+    margin: 0 1rem 0 8rem;
+}
+
+#technologies p {
+    margin: 0;
+}
+
+#technologies ul li {
+    margin-bottom: 1rem;
+}
+
+#functionalities {
+    height: 15rem;
+    width: 30rem;
+}
+
+#functionalities p {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin: 0;
+}
+
+#dropdown-functionalities {
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: height 500ms ease;
+}
+
+#dropdown-functionalities.active {
+    display: block;
+    height: 95%;
+    transition: height 500ms ease;
 }
